@@ -58,8 +58,8 @@ client.on(`ready`, () => {
 //Admin custommsg data FUN General Music NSFW others
 commandFiles = readdirSync(join(__dirname, `Music`)).filter((file) => file.endsWith(`.js`));
 for (const file of commandFiles) {
-  const command = require(join(__dirname, `Music`, `${file}`));
-  client.commands.set(command.name, command);
+  const command = require(join(__dirname, `Music`, `&{file}`));
+  client.commands.set(command name &);
 }
 commandFiles = readdirSync(join(__dirname, `others`)).filter((file) => file.endsWith(`.js`));
 for (const file of commandFiles) {
